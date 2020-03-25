@@ -88,15 +88,21 @@
 			background-size: cover;
 			background-position: center;
 		}
-		.brand_wrap{
+		.b_hv{
 			content:"";
 			display: block;
-			width: 400px; 
-			height: 400px;
+			width: 320px; 
+			height: 320px;
 			border-radius: 50%;
 			overflow:hidden;
-			animation:brandAni 3s forwards;
+		}
+		.b_hv img{
+			transform:scale(1);
+			transition:.3s;
+		}
+		.b_hv:hover img{
+			animation:brandAni 1s forwards;
 		}
 		@keyframes brandAni{
-			to(transform:rotate(360deg))
+			to{transform:scale(1.2);}
 		}
