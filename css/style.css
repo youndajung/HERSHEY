@@ -4,24 +4,30 @@
 		.lightyellow{background-color: #f8f0b4;}
 		.red{background-color: #e13533;}
 		.blue{background-color: #00b2a9;}
+		.brown{background-color: #370311;}
+		.lightgray{background-color: #dddddd;}
 		.text_blue{color:#00b2a9;}
 		.text_brown{color:#370311}
+		.text_gray{color:#888888 !important;}
+		.text_red{color:#e13533;}
+		.text_white{color:#ffffff;}
 		.title{
 			font-weight: bold;
 			font-size:2rem;
 			font-family:hershey;
 		}
-		h1{font-size:48px;}
-		a{
-			font-family:hershey; font-size:2rem;
+		.fs_12{font-size: 12px;}
+		.fs_56{font-size:56px;}
+		h1{
+			font-size:56px;
 		}
 		.btn{
 			font-family:hershey;
 			font-size:2.5rem;
 		}
 		.fw_bold{font-weight: bold;}
-
-
+		.search_btn button{display: none !important;}
+		/*서치버튼!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*mobile*/
 		.m_more{
 			width: 150px; height: 150px;
@@ -66,10 +72,9 @@
 		}
 		.c_wrap{position: relative;}
 		.c_wrap:hover .hv{opacity:1;} 
+
 /*recipe*/
 		.r_wrap{
-			width: 230px; height: 230px;
-			border-radius: 100%;
 			overflow:hidden;
 			position: relative;
 		}
@@ -82,6 +87,31 @@
 			transition:.5s;
 		}
 		.r_wrap:hover .r_hv{opacity:1;}
+		.show{opacity:0; transition:2s;}
+		.content02_wrap.active .show{
+			animation: showAni 1s forwards;
+		}
+		@keyframes showAni{
+			to{opacity:1; }
+		}
+		.content02_wrap.active .show:nth-child(2){
+			animation: showAni2 1s .3s forwards;
+		}
+		@keyframes showAni2{
+			to{opacity:1; }
+		}
+		.content02_wrap.active .show:nth-child(3){
+			animation: showAni3 1s .6s forwards;
+		}
+		@keyframes showAni3{
+			to{opacity:1; }
+		}
+		.content02_wrap.active .show:nth-child(4){
+			animation: showAni4 1s .9s forwards;
+		}
+		@keyframes showAni4{
+			to{opacity:1; }
+		}
 /*brands*/
 		.content03_wrap{
 			background-image: url(../images/brands_bg.png);
@@ -91,8 +121,6 @@
 		.b_hv{
 			content:"";
 			display: block;
-			width: 320px; 
-			height: 320px;
 			border-radius: 50%;
 			overflow:hidden;
 		}
@@ -106,3 +134,81 @@
 		@keyframes brandAni{
 			to{transform:scale(1.2);}
 		}
+		.brand_wrap{opacity:0; transition:2s;}
+		.content03_wrap.active .brand_wrap:first-child{
+			animation: brandAni 1s forwards;
+		}
+		@keyframes brandAni{
+			to{opacity:1;}
+		}
+		.content03_wrap.active .brand_wrap:nth-child(2){
+			animation: brandAni2 1s 0.2s forwards;
+		}
+		@keyframes brandAni2{
+			to{opacity:1;}
+		}
+		.content03_wrap.active .brand_wrap:nth-child(3){
+			animation: brandAni3 1s 0.4s forwards;
+		}
+		@keyframes brandAni3{
+			to{opacity:1;}
+		}
+		.content03_wrap.active .brand_wrap:nth-child(4){
+			animation: brandAni4 1s 0.6s forwards;
+		}
+		@keyframes brandAni4{
+			to{opacity:1;}
+		}
+		.content03_wrap.active .brand_wrap:nth-child(5){
+			animation: brandAni5 1s 0.8s forwards;
+		}
+		@keyframes brandAni5{
+			to{opacity:1;}
+		}
+		.content03_wrap.active .brand_wrap:nth-child(6){
+			animation: brandAni6 1s 1s forwards;
+		}
+		@keyframes brandAni6{
+			to{opacity:1;}
+		}
+/*footer*/
+.go_recipe,
+.go_event{
+	position: relative; 
+	overflow:hidden;
+}
+.go_r_text,
+.go_e_text{
+	position: absolute; 
+	top:50%; left: 50%;
+	transform:translate(-50%,-50%);
+	z-index: 1; 
+}
+.go_recipe img{transition:.5s;}
+.go_event img{transition:.5s;}
+.go_recipe:hover img{transform:scale(1.2);}
+.go_event:hover img{transform:scale(1.2);}
+.f_btn{
+	border: 3px solid #370311;
+	border-radius: 50px 50px 0 0;
+	border-bottom: none;
+	transition:0.3s;
+}
+.right{border-left: 2px solid #d3d3d3;}
+@media (max-width: 575.98px) {
+	/*body{font-size:20px !important;
+		background-color: #f00;}*/
+
+	.right{border-left: 0px solid #d3d3d3;}
+	.f_btn{border-radius: 20px 20px 0 0 !important;}
+}
+@media (max-width: 767.98px) {
+	/*body{font-size:12px}*/
+}
+@media (max-width: 991.98px) {
+	/*body{font-size:20px}	*/
+}
+@media (max-width: 1199.98px) {
+}
+
+/*sub*/
