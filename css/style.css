@@ -2,6 +2,7 @@
 /*reset*/
 		.yellow{background-color: #ffa300;}
 		.lightyellow{background-color: #f8f0b4;}
+		.green{background-color: #d4cb85;}
 		.red{background-color: #e13533;}
 		.blue{background-color: #00b2a9;}
 		.lightblue{background-color: #96b89f;}
@@ -11,6 +12,7 @@
 		.text_blue{color:#00b2a9;}
 		.text_brown{color:#370311}
 		.text_gray{color:#888888 !important;}
+		.text_lightgray{color:#bbb}
 		.text_red{color:#e13533;}
 		.text_white{color:#ffffff;}
 		.title{
@@ -27,19 +29,33 @@
 			font-size:1.2rem;
 		}
 		.fs_12{font-size: 12px;}
+		.fs_48{font-size:48px;}
 		.fs_56{font-size:56px;}
 		.fs_100{font-size: 100px;}
-		h1{
-			font-size:56px;
-		}
+		h1{font-size:56px;}
 		.btn{
 			font-family:hershey;
 			font-size:2.5rem;
 		}
 		.fw_bold{font-weight: bold;}
-		.search_btn button{display: none !important;}
+		/*.search_btn button{display: none !important;}*/
 		/*서치버튼!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*mobile*/
+
+		.search_on{position: relative; width: 250px;}
+		.search_on input{
+			width: 250px !important;
+			height: 45px !important;
+			border-radius: 30px !important;
+			opacity:.5;
+		}
+		.search_on a{
+			position: absolute; right: 25px;
+			opacity:1;
+		}
+
+
+
 		.m_more{
 			width: 150px; height: 150px;
 			border-radius: 100%;
@@ -98,26 +114,26 @@
 			transition:.5s;
 		}
 		.r_wrap:hover .r_hv{opacity:1;}
-		.show{opacity:0; transition:2s;}
-		.content02_wrap.active .show{
+		.r_show{opacity:0; transition:2s;}
+		.content02_wrap.active .r_show{
 			animation: showAni 1s forwards;
 		}
 		@keyframes showAni{
 			to{opacity:1; }
 		}
-		.content02_wrap.active .show:nth-child(2){
+		.content02_wrap.active .r_show:nth-child(2){
 			animation: showAni2 1s .3s forwards;
 		}
 		@keyframes showAni2{
 			to{opacity:1; }
 		}
-		.content02_wrap.active .show:nth-child(3){
+		.content02_wrap.active .r_show:nth-child(3){
 			animation: showAni3 1s .6s forwards;
 		}
 		@keyframes showAni3{
 			to{opacity:1; }
 		}
-		.content02_wrap.active .show:nth-child(4){
+		.content02_wrap.active .r_show:nth-child(4){
 			animation: showAni4 1s .9s forwards;
 		}
 		@keyframes showAni4{
@@ -266,5 +282,24 @@
 .hershey_wrap:hover .brand_hv{opacity:1;}
 .hershey_wrap:hover .brand_hv span{
 	transform:scale(1.2);
+}
+.recipe_wrap{
+	overflow:hidden;
+}
+.recipe_wrap .brand_hv{
+
+}
+.recipe_wrap:hover .brand_hv{opacity:1;}
+.recipe_wrap:hover .brand_hv span{
+	transform:scale(1.2);
+}
+#myVideo{width: 100%; height: 100%;}
+
+.story01_img{position: relative;}
+.story_btn{
+	position: absolute;
+	top:50%; left: 50%;
+	transform:translate(-50%,-50%);
+	z-index: 1;
 }
 
