@@ -50,8 +50,7 @@
 			border-radius: 30px !important;
 			opacity:.5;
 		}
-		.search_on a{
-			position: absolute; right: 25px;
+		.search_on a{position: absolute; right: 25px;
 			opacity:1;
 		}
 
@@ -86,8 +85,7 @@
 		}
 		.header_wrap{background-image: url(../images/visual_bg01.jpg);
 			background-repeat:no-repeat;
-			background-position:center;
-			background-size:cover;
+			background-position: center 0;
 		}
 		.hv{
 			width: 240px;
@@ -230,18 +228,40 @@
 	/*body{font-size:20px !important;
 		background-color: #f00;}*/
 	.right{border-left: 0px solid #d3d3d3;}
+	.story_text{font-size:12px;}
+	.story_btn p{font-size:50px;}
+	.story_btn button{font-size:12px !important;}
 	.f_btn{border-radius: 20px 20px 0 0 !important;}
 	.story_btn02 h2{font-size:20px !important;}
 	.story_btn02 p{font-size:12px !important;}
-	.story_btn02 button{font-size:12px;}
+	.content01_wrap h1{font-size:35px !important;}
+	.bunny_txt,
+	.egg_txt{
+		font-size:12px;
+		padding-top: 20px;
+	}
+	.bunny_wrap img,
+	.egg_wrap img{
+		transform:scale(2)!important;
+		padding: 50px 0;
+	}
 }
 @media (max-width: 767.98px) {
 	/*body{font-size:12px}*/
 	.story_btn02 h2{font-size:30px;}
 	.story_btn02 p{font-size:14px;}
 	.story_btn02 button{font-size:14px;}
-
-
+	.content01_wrap h1{font-size:35px !important;}
+	.bunny_txt,
+	.egg_txt{
+		font-size:12px;
+		padding-top: 20px;
+	}
+	.bunny_wrap img,
+	.egg_wrap img{
+		transform:scale(2)!important;
+		padding: 50px 0;
+	}
 }
 @media (max-width: 991.98px) {
 	/*body{font-size:20px}	*/
@@ -273,9 +293,7 @@
 	transition:.5s;
 	opacity:0;
 }
-.all_brand:hover .a_b_hv{
-	opacity:1;
-}
+.all_brand:hover .a_b_hv{opacity:1;}
 .brand_hv{
 	position: absolute;
 	top: 0; left: 0;
@@ -291,19 +309,10 @@
 	transition:.3s;
 }
 .hershey_wrap:hover .brand_hv{opacity:1;}
-.hershey_wrap:hover .brand_hv span{
-	transform:scale(1.2);
-}
-.recipe_wrap{
-	overflow:hidden;
-}
-.recipe_wrap .brand_hv{
-
-}
+.hershey_wrap:hover .brand_hv span{transform:scale(1.2);}
+.recipe_wrap{overflow:hidden;}
 .recipe_wrap:hover .brand_hv{opacity:1;}
-.recipe_wrap:hover .brand_hv span{
-	transform:scale(1.2);
-}
+.recipe_wrap:hover .brand_hv span{transform:scale(1.2);}
 #myVideo{width: 100%; height: 100%;}
 
 .story01_img{position: relative;}
@@ -313,16 +322,8 @@
 	transform:translate(-50%,-50%);
 	z-index: 1;
 }
-
-
-
-
-
-
-.bounceIn{
-         animation:bounceIn 1.2s 0.1s forwards;
-      }
-
+/*slider main title*/
+.bounceIn{animation:bounceIn 1.2s 0.1s forwards; }
       @keyframes bounceIn {
         from,
         20%,
@@ -333,34 +334,28 @@
           -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
           animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         }
-
         0% {
           opacity: 0;
           -webkit-transform: scale3d(0.3, 0.3, 0.3);
           transform: scale3d(0.3, 0.3, 0.3);
         }
-
         20% {
           -webkit-transform: scale3d(1.1, 1.1, 1.1);
           transform: scale3d(1.1, 1.1, 1.1);
         }
-
         40% {
           -webkit-transform: scale3d(0.9, 0.9, 0.9);
           transform: scale3d(0.9, 0.9, 0.9);
         }
-
         60% {
           opacity: 1;
           -webkit-transform: scale3d(1.03, 1.03, 1.03);
           transform: scale3d(1.03, 1.03, 1.03);
         }
-
         80% {
           -webkit-transform: scale3d(0.97, 0.97, 0.97);
           transform: scale3d(0.97, 0.97, 0.97);
         }
-
         to {
           opacity: 1;
           -webkit-transform: scale3d(1, 1, 1);

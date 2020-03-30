@@ -3,13 +3,17 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>::HERSHEY::</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<style>
 		@font-face {
   font-family: hershey;
@@ -22,7 +26,7 @@
 		<div class="container py-4">
 			<nav class="navbar navbar-expand-lg navbar-dark ">
 			  
-			  <a class="navbar-brand" href="index.html">
+			  <a class="navbar-brand pr-4" href="index.html">
 			  	<img src="images/logo.png" alt="hershey_logo">
 			  </a>
 			  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +35,7 @@
 
 			  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-			      <li class="nav-item active dropdown px-4">
+			      	<li class="nav-item active dropdown pr-4">
 				      <a class="nav-link dropdown-toggle" href="#!" id="navbardrop" data-toggle="dropdown">
 				        BRANDS
 				        <span class="sr-only">(current)</span>
@@ -90,13 +94,17 @@
 			</div>
 			<div class="row">
 				<div class="d-none d-md-block col-md-4"></div>
-				<div class="col-md-4"><img src="images/visual_img.png" class="pt-3 w-100" alt="bunny_img" ></div>
+				<div class="col-md-4 slick p-0">
+					<div><img src="images/visual_img.png" class="pt-3 w-100" alt="bunny_img" ></div>
+					<div><img src="images/visual_img02.png" class="pt-3 w-100" alt="bunny_img" ></div>
+					<div><img src="images/visual_img03.png" class="pt-3 w-100" alt="bunny_img" ></div>
+				</div>
 				<div class="d-none d-md-block col-md-4"></div>
 			</div>
 			<div class="row">
-				<div class="d-none d-md-block col-md-4"></div>
-				<div class="col-md-4 py-4"><button type="button" class="btn red text-white btn-lg btn-block px-5 py-2" onclick="location.href='brands.html'">LEARN MORE</button></div>
-				<div class="d-none d-md-block col-md-4"></div>
+				<div class="d-none d-lg-block col-lg-4"></div>
+				<div class="col-lg-4 py-4"><button type="button" class="btn red text-white btn-lg btn-block px-5 py-2" onclick="location.href='brands.html'">LEARN MORE</button></div>
+				<div class="d-none d-lg-block col-lg-4"></div>
 			</div>
 		</div>
 	</div>
@@ -108,25 +116,25 @@
 			<p class="title">HERSHEY'S BUNNY SERIES</p>
 			<div class="row pt-3 pb-5">
 				<div class="col-6 col-md-4">
-					<div class="container text-center px-5 c_wrap">
+					<div class="bunny_wrap container text-center px-5 c_wrap">
 						<img src="images/bunny01.png" class="w-100" alt="">
 						<div class="hv yellow"></div>
 					</div>
-					<p class="fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
+					<p class="bunny_txt fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
 				</div>
 				<div class="col-6 col-md-4">
-					<div class="container text-center px-5 c_wrap">
+					<div class="bunny_wrap container text-center px-5 c_wrap">
 						<img src="images/bunny02.png" class="w-100" alt="">
 						<div class="hv yellow"></div>
 					</div>
-					<p class="fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
+					<p class="bunny_txt fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
 				</div>
 				<div class="col-6 col-md-4">
-					<div class="container text-center px-5 c_wrap">
+					<div class="bunny_wrap container text-center px-5 c_wrap">
 						<img src="images/bunny03.png" class="w-100" alt="">
 						<div class="hv yellow"></div>
 					</div>
-					<p class="fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
+					<p class="bunny_txt fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
 				</div>
 				<a href="#" class="m_more red d-md-none d-flex justify-content-center align-items-center title">more</a>
 			</div>
@@ -135,25 +143,25 @@
 				<p class="title">HERSHEY'S BUNNY SERIES</p>
 				<div class="row pt-3 pb-5">
 					<div class="col-6 col-md-4">
-						<div class="container text-center px-5 c_wrap">
+						<div class="egg_wrap container text-center px-5 c_wrap">
 							<img src="images/egg_hunt01.png" class="w-100" alt="">
 							<div class="hv yellow"></div>
 						</div>
-						<p class="fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
+						<p class="egg_txt fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
 					</div>
 					<div class="col-6 col-md-4">
-						<div class="container text-center px-5 c_wrap">
+						<div class="egg_wrap container text-center px-5 c_wrap">
 							<img src="images/egg_hunt02.png" class="w-100" alt="">
 							<div class="hv yellow"></div>
 						</div>
-						<p class="fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
+						<p class="egg_txt fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
 					</div>
 					<div class="col-6 col-md-4">
-						<div class="container text-center px-5 c_wrap">
+						<div class="egg_wrap container text-center px-5 c_wrap">
 							<img src="images/egg_hunt03.png" class="w-100" alt="">
 							<div class="hv yellow"></div>
 						</div>
-						<p class="fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
+						<p class="egg_txt fw_bold">HERSHEY'S Solid Milk Chocolate Princess&running Bunny, 5 oz</p>
 					</div>
 					<a href="#" class="m_more red d-md-none d-flex justify-content-center align-items-center title">more</a>
 				</div>
@@ -251,7 +259,7 @@
 
 	<div class="r&e">
 		<div class="container text-center text_gray">
-			<div class="row py-5">
+			<div class="row pt-0 pb-5 py-md-5">
 				<a href="recipes.html" class="go_recipe col-md-6 p-0 fs_56 title">
 					<div class="go_r_text">
 						HERSHEY'S <span class="text_white">RECIPES</span>
@@ -337,6 +345,16 @@
 				$(".content03_wrap").removeClass("active");
 				
 			}
+		});
+		$('.slick').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true,
+		  autoplay:true,
+		  autoplaySpeed:3000,
+		  arrows:false,
 		});
 	</script>
 </body>
