@@ -39,9 +39,6 @@
 			font-size:2.5rem;
 		}
 		.fw_bold{font-weight: bold;}
-		/*.search_btn button{display: none !important;}*/
-		/*서치버튼!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*mobile*/
 
 		.search_on{position: relative; width: 250px;}
 		.search_on input{
@@ -50,18 +47,14 @@
 			border-radius: 30px !important;
 			opacity:.5;
 		}
-		.search_on a{position: absolute; right: 25px;
-			opacity:1;
-		}
-
-
-
+		.search_on a{position: absolute; right: 25px;opacity:1;}
+		.visualBtn{display: block;}
 		.m_more{
 			width: 150px; height: 150px;
 			border-radius: 100%;
 			background-color: #e13533;
 			display: block;
-			margin: auto; /*왜 안먹어!!!!!!!!!!!!!!!!*/
+			margin: auto;
 			transition:.5s;
 		}
 		.m_more:hover{background-color: #ffa300;}
@@ -100,7 +93,6 @@
 		}
 		.c_wrap{position: relative;}
 		.c_wrap:hover .hv{opacity:1;} 
-
 /*recipe*/
 		.r_wrap{
 			overflow:hidden;
@@ -225,8 +217,6 @@
 }
 .right{border-left: 2px solid #d3d3d3;}
 @media (max-width: 575.98px) {
-	/*body{font-size:20px !important;
-		background-color: #f00;}*/
 	.right{border-left: 0px solid #d3d3d3;}
 	.story_text{font-size:12px;}
 	.story_btn p{font-size:50px;}
@@ -242,12 +232,10 @@
 	}
 	.bunny_wrap img,
 	.egg_wrap img{
-		transform:scale(2)!important;
-		padding: 50px 0;
-	}
+		transform:scale(2)!important; padding: 50px 0;}
+	.hv{width: 150px !important; height: 150px !important;}
 }
 @media (max-width: 767.98px) {
-	/*body{font-size:12px}*/
 	.story_btn02 h2{font-size:30px;}
 	.story_btn02 p{font-size:14px;}
 	.story_btn02 button{font-size:14px;}
@@ -269,7 +257,6 @@
 }
 @media (max-width: 1199.98px) {
 }
-
 /*sub*/
 .brand_bg{
 	display: block;

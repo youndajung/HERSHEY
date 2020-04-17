@@ -543,26 +543,5 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		new WOW().init();
-		$(window).scroll(function(){
-			var scrollY=$("html").scrollTop();
-			var c2Y=$(".content02_wrap");
-			if(scrollY>=c2Y.offset().top-400){
-				$(".content02_wrap").addClass("active");
-			}else{
-				$(".content02_wrap").removeClass("active");
-				
-			}
-
-			var c3Y=$(".content03_wrap");
-			if(scrollY>=c3Y.offset().top-300){
-				$(".content03_wrap").addClass("active");
-			}else{
-				$(".content03_wrap").removeClass("active");
-				
-			}
-		});
-	</script>
 </body>
 </html>
